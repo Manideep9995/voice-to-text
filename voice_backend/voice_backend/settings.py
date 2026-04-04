@@ -128,7 +128,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-key'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.netlify.app"
+]
 # INSTALLED APPS
 INSTALLED_APPS = [
     'django.contrib.admin',
