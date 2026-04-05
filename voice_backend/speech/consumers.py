@@ -4,25 +4,25 @@
 # import os
 # import traceback
 # import asyncio
-from channels.generic.websocket import AsyncWebsocketConsumer
+# from channels.generic.websocket import AsyncWebsocketConsumer
 
 #model = whisper.load_model("base")
 
 
-class AudioConsumer(AsyncWebsocketConsumer):
+# class AudioConsumer(AsyncWebsocketConsumer):
 
-    # async def connect(self):
-    #     print("✅ WebSocket Connected")
-    #     await self.accept()
+#     async def connect(self):
+#         print("✅ WebSocket Connected")
+#         await self.accept()
 
-    #     self.previous_text = ""
+#         self.previous_text = ""
 
-    #     # 🔥 Keep first chunk as base (IMPORTANT)
-    #     self.header_chunk = None
-    #     self.audio_chunks = []
+#         # 🔥 Keep first chunk as base (IMPORTANT)
+#         self.header_chunk = None
+#         self.audio_chunks = []
 
-    # async def disconnect(self, close_code):
-    #     print("🔌 WebSocket Disconnected")
+#     async def disconnect(self, close_code):
+#         print("🔌 WebSocket Disconnected")
 
     # async def receive(self, bytes_data=None, text_data=None):
     #     print("📡 receive() triggered")
