@@ -7,10 +7,10 @@
 # https://docs.djangoproject.com/en/6.0/howto/deployment/wsgi/
 # """
 
-# import os
+import os
 
-# from django.core.wsgi import get_wsgi_application
+from django.core.wsgi import get_wsgi_application
 
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'voice_backend.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'voice_backend.settings')
 
-# application = get_wsgi_application()
+application = get_wsgi_application()

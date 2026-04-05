@@ -142,7 +142,6 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'corsheaders',
-    'channels',
     'speech',
 ]
 
@@ -176,9 +175,9 @@ TEMPLATES = [
         },
     },
 ]
-ASGI_APPLICATION = 'voice_backend.asgi.application'
+#ASGI_APPLICATION = 'voice_backend.asgi.application'
 # WSGI
-#WSGI_APPLICATION = 'voice_backend.wsgi.application'
+WSGI_APPLICATION = 'voice_backend.wsgi.application'
 
 # DATABASE (default sqlite)
 DATABASES = {
