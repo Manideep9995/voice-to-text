@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import axios from "axios";
 
 function App() {
-  const [mode, setMode] = useState("");
+  const [mode, setMode] = useState("upload");
   const [recording, setRecording] = useState(false);
   const [lines, setLines] = useState([]);
   const [file, setFile] = useState(null);
@@ -148,7 +148,7 @@ mediaRecorderRef.current.start(1000);
             type="radio"
             value="live"
             checked={mode === "live"}
-            disabled={uploading} // 🔥 disable while uploading
+            disabled={!uploading} // 🔥 disable while uploading
             onChange={(e) => setMode(e.target.value)}
           />
           Live Voice
@@ -156,7 +156,7 @@ mediaRecorderRef.current.start(1000);
 
         <label style={{ marginLeft: "20px" }}>
           <input
-            type="radio"
+            type="radio"       
             value="upload"
             checked={mode === "upload"}
             disabled={recording} // 🔥 disable while recording
