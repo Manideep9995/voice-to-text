@@ -1,13 +1,13 @@
 import os
 import traceback
-import whisper
+#import whisper
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.conf import settings
-
+from .model import model
 # Load model once
 #model = whisper.load_model("base")
-model = whisper.load_model("tiny")
+#model = whisper.load_model("tiny")
 @api_view(['POST'])
 def transcribe_audio(request):
     file = request.FILES.get('file')
